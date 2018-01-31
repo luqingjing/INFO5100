@@ -2,10 +2,10 @@ package Assignment2.TwoSum;
 
 import java.util.Hashtable;
 
-// Time complexity: O(n^2).
-// Space complexity: O(1).
 public class Solution {
 
+    // Time complexity: O(n^2).
+    // Space complexity: O(1).
     public int[] twoSum1(int[] nums, int target) {
 
         int[] index = new int[2];

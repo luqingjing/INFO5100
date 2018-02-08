@@ -1,3 +1,5 @@
+// scores : 4 / 4 
+
 package Assignment2.TwoSum;
 
 import java.util.Hashtable;

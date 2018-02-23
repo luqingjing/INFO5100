@@ -1,5 +1,7 @@
 package Assignment5;
 
+import java.util.*;
+
 public class Calculator {
 
     double add(double a, double b) {
@@ -53,18 +55,64 @@ public class Calculator {
     public static void main(String[] args) {
 
         Calculator c = new Calculator();
-        System.out.println(c.add(3.5, 2));
-        System.out.println(c.subtract(3.5, 2));
-        System.out.println(c.multiply(3.5, 2));
-        System.out.println(c.divide(3.5, 2));
-        System.out.println(c.fahrenheitToCelsius(86));
-        System.out.println(c.celsiusToFahrenheit(30));
-        System.out.println(c.feetToInches(1.8));
-        System.out.println(c.inchesToFeet(21.6));
-        System.out.println(c.squareRoot(4));
-        System.out.println(c.square(4));
-        System.out.println(c.cube(4));
+        double a;
+        double b;
+        int operation;
+        Scanner op = new Scanner(System.in);
 
+        while (true) {
+            System.out.println("Please enter operation:");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.println("5. squareRoot");
+            System.out.println("6. square");
+            System.out.println("7. Cube");
+            System.out.println("8. Fahrenheit to Celsius");
+            System.out.println("9. Celsius to Fahrenheit");
+            System.out.println("10. Feet to Inches");
+            System.out.println("11. Inches to Feet");
+            operation = op.nextInt();
+
+            if (operation > 11)
+                System.out.println("Input is not valid.");
+
+            if (operation == 1 || operation == 2 || operation == 3 || operation == 4) {
+
+                System.out.println("Please enter the first number:");
+                a = op.nextDouble();
+                System.out.println("Please enter the second number:");
+                b = op.nextDouble();
+                if (operation == 1)
+                    System.out.println(c.add(a, b));
+                if (operation == 2)
+                    System.out.println(c.subtract(a, b));
+                if (operation == 3)
+                    System.out.println(c.multiply(a, b));
+                if (operation == 4)
+                    System.out.println(c.divide(a, b));
+            }
+            else {
+
+                System.out.println("Please enter the number:");
+                a = op.nextDouble();
+                if (operation == 5)
+                    System.out.println(c.squareRoot(a));
+                if (operation == 6)
+                    System.out.println(c.square(a));
+                if (operation == 7)
+                    System.out.println(c.cube(a));
+                if (operation == 8)
+                    System.out.println(c.fahrenheitToCelsius(a));
+                if (operation == 9)
+                    System.out.println(c.celsiusToFahrenheit(a));
+                if (operation == 10)
+                    System.out.println(c.feetToInches(a));
+                if (operation == 11)
+                    System.out.println(c.inchesToFeet(a));
+            }
+        }
     }
 
 }

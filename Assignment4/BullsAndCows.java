@@ -1,3 +1,4 @@
+total : 10 / 10
 package Assignment4;
 
 public class BullsAndCows {

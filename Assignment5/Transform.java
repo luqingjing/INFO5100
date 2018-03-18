@@ -1,3 +1,4 @@
+// total scores : 10 / 10
 package Assignment5;
 
 public class Transform {

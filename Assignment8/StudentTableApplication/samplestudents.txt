@@ -1,0 +1,7 @@
+1,Adam,Male,99.5
+2,Bella,Female,99
+3,Cindy,Female,98.7
+4,David,Male,97
+5,Emma,Female,100
+6,Franklin,Male,96
+7,Gina,Female,96

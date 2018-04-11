@@ -184,6 +184,8 @@ public class StudentTableApplication extends JFrame {
 
     private void createComponents() throws Exception {
 
+        setTitle("Student Information System");
+
         persistor = new StudentsPersistorImpl();
         manager = persistor.load();
         students = manager.getStudents();
